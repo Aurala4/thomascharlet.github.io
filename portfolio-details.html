@@ -25,12 +25,13 @@
 
   <style>
     :root {
-      --color-primary: #f8f9fa; /* Off-white */
+      --color-primary: #f8f9fa; /* Blanc cassé */
       --color-accent: #f8f9fa;
     }
     .header .navmenu a.active, .header .navmenu a:hover,
-    .header .social-links a:hover {
-      color: var(--color-primary);
+    .header .social-links a:hover,
+    .text-primary {
+      color: var(--color-primary) !important;
     }
     .btn-primary { 
       background: var(--color-primary); 
@@ -38,11 +39,8 @@
       border-color: var(--color-primary);
     }
     .btn-primary:hover {
-      background: #d4d4d4;
-      border-color: #d4d4d4;
-      color: #1a1a1a;
+      background: #d4d4d4; border-color: #d4d4d4; color: #1a1a1a;
     }
-    .text-primary { color: var(--color-primary) !important; }
     .portfolio-info h3 { color: var(--color-primary); }
     .features .feature-item i { color: var(--color-primary); }
   </style>
