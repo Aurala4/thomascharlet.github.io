@@ -9,7 +9,7 @@
   <meta name="keywords" content="Thomas Charlet, Réseaux, Télécommunications, portfolio, CV, IUT Béthune">
 
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assetsimg/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -28,7 +28,6 @@
 
   <header id="header" class="header dark-background d-flex flex-column justify-content-center">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -38,14 +37,11 @@
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
-
       <div class="social-links text-center">
         <a href="https://github.com/Aurala4" class="github" title="Mon GitHub (Aurala4)" target="_blank"><i class="bi bi-github"></i></a>
         <a href="#" class="linkedin" title="Mon LinkedIn (Lien à mettre à jour)"><i class="bi bi-linkedin"></i></a>
       </div>
-
     </div>
-
   </header>
 
   <main class="main">
@@ -67,10 +63,6 @@
                 <div class="hero-actions">
                   <a href="#portfolio" class="btn btn-primary">Voir mon Portfolio</a>
                   <a href="#contact" class="btn btn-outline">Me contacter</a>
-                </div>
-                <div class="social-links">
-                  <a href="https://github.com/Aurala4" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="#" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -239,79 +231,80 @@
         </div>
       </div>
     </section><section id="portfolio" class="portfolio section">
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio : Compétences R&T</h2>
         <p>Mes projets et réalisations sont liés aux cinq domaines de compétences du BUT Réseaux & Télécommunications.</p>
         <p><a href="competences-rt.html" class="btn btn-sm btn-outline-primary mt-2">Détails des 5 Compétences R&T</a></p>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          
-          <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-admin">
-            <div class="portfolio-wrap text-center">
-              <i class="bi bi-person-workspace h2 text-primary"></i>
-              <div class="portfolio-info">
-                <h4>Administrer</h4>
-                <p>Gestion des systèmes et des utilisateurs.</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" class="btn btn-sm btn-outline-secondary mt-2">Voir Projet (Ex: SAE 1.04)</a>
-                </div>
+      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 w-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-person-workspace h2 text-primary"></i>
+                <h4 class="card-title mt-3">Administrer</h4>
+                <p class="card-text">Gestion des systèmes (Linux/Windows) et des services (DHCP, DNS).</p>
+              </div>
+              <div class="card-footer text-center bg-white border-0 pb-3">
+                <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary">Voir Projet (SAE 1.04)</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-connect">
-            <div class="portfolio-wrap text-center">
-              <i class="bi bi-router h2 text-primary"></i>
-              <div class="portfolio-info">
-                <h4>Connecter</h4>
-                <p>Mise en place d'infrastructures réseau.</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" class="btn btn-sm btn-outline-secondary mt-2">Voir Projet (Ex: TP R108)</a>
-                </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 w-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-router h2 text-primary"></i>
+                <h4 class="card-title mt-3">Connecter</h4>
+                <p class="card-text">Mise en place d'infrastructures réseau, adressage et routage (VLAN, IP).</p>
+              </div>
+              <div class="card-footer text-center bg-white border-0 pb-3">
+                <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary">Voir Projet (TP R1.08)</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-prog">
-            <div class="portfolio-wrap text-center">
-              <i class="bi bi-code-slash h2 text-primary"></i>
-              <div class="portfolio-info">
-                <h4>Programmer</h4>
-                <p>Développement (HTML/CSS, Python, etc.).</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" class="btn btn-sm btn-outline-secondary mt-2">Voir Projet (Ex: SAE 1.04)</a>
-                </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 w-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-code-slash h2 text-primary"></i>
+                <h4 class="card-title mt-3">Programmer</h4>
+                <p class="card-text">Développement de solutions (HTML/CSS, Python, Bash) pour le réseau.</p>
+              </div>
+              <div class="card-footer text-center bg-white border-0 pb-3">
+                <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary">Voir Projet (SAE 1.04)</a>
               </div>
             </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-secur">
-            <div class="portfolio-wrap text-center">
-              <i class="bi bi-shield-lock h2 text-primary"></i>
-              <div class="portfolio-info">
-                <h4>Sécuriser</h4>
-                <p>Protection des systèmes d'information.</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" class="btn btn-sm btn-outline-secondary mt-2">Voir Projet (Ex: TP R107)</a>
-                </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+            <div class="card h-100 w-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-shield-lock h2 text-primary"></i>
+                <h4 class="card-title mt-3">Sécuriser</h4>
+                <p class="card-text">Protection des systèmes, configuration de pare-feu et analyse de logs.</p>
+              </div>
+              <div class="card-footer text-center bg-white border-0 pb-3">
+                <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary">Voir Projet (TP R1.07)</a>
               </div>
             </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 portfolio-item" data-filter=".filter-surv">
-            <div class="portfolio-wrap text-center">
-              <i class="bi bi-graph-up h2 text-primary"></i>
-              <div class="portfolio-info">
-                <h4>Surveiller</h4>
-                <p>Audit et supervision des performances.</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" class="btn btn-sm btn-outline-secondary mt-2">Voir Projet (Ex: TP R203)</a>
-                </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+            <div class="card h-100 w-100 shadow-sm">
+              <div class="card-body text-center">
+                <i class="bi bi-graph-up h2 text-primary"></i>
+                <h4 class="card-title mt-3">Surveiller</h4>
+                <p class="card-text">Audit et supervision des performances réseau et système.</p>
+              </div>
+              <div class="card-footer text-center bg-white border-0 pb-3">
+                <a href="portfolio-details.html" class="btn btn-sm btn-outline-primary">Voir Projet (TP R2.03)</a>
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section><section id="contact" class="contact section">
@@ -397,7 +390,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assetsG/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> 
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
