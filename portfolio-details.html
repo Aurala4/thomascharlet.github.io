@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Détails Portfolio - SAE 1.04 - Thomas Charlet</title>
-  <meta name="description" content="Détails du projet SAE 1.04 - Se présenter sur Internet">
-  <meta name="keywords" content="SAE 1.04, HTML, CSS, Bootstrap, R&T">
+  <title>Détails Portfolio - Projets S1 - Thomas Charlet</title>
+  <meta name="description" content="Détails des projets SAE 1.04, TP R1.07 et R1.08">
+  <meta name="keywords" content="SAE 1.04, HTML, CSS, Bootstrap, R&T, Linux, IP">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -22,13 +22,36 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #f8f9fa; /* Off-white */
+      --color-accent: #f8f9fa;
+    }
+    .header .navmenu a.active, .header .navmenu a:hover,
+    .header .social-links a:hover {
+      color: var(--color-primary);
+    }
+    .btn-primary { 
+      background: var(--color-primary); 
+      color: #1a1a1a; 
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: #d4d4d4;
+      border-color: #d4d4d4;
+      color: #1a1a1a;
+    }
+    .text-primary { color: var(--color-primary) !important; }
+    .portfolio-info h3 { color: var(--color-primary); }
+    .features .feature-item i { color: var(--color-primary); }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column justify-content-center">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -38,10 +61,9 @@
           <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
-
       <div class="social-links text-center">
         <a href="https://github.com/Aurala4" class="github" title="Mon GitHub" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="#" class="linkedin" title="Mon LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/thomas-charlet-b821b2287/" class="linkedin" title="Mon LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </header>
@@ -50,12 +72,12 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Détails du Portfolio</h1>
+        <h1 class="mb-2 mb-lg-0">Détails du Portfolio (S1)</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li class="current">Détails du Projet</li>
+            <li class="current">Détails Projets S1</li>
           </ol>
         </nav>
       </div>
@@ -66,10 +88,10 @@
             <div class="portfolio-details-slider swiper init-swiper">
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Aperçu 1" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Aperçu SAE 1.04" class="img-fluid" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Aperçu 2" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Aperçu TP Réseau" class="img-fluid" loading="lazy">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -78,53 +100,57 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Informations Projet</h3>
+              <h3>Informations Projets S1</h3>
               <ul>
-                <li><strong>Catégorie</strong>: Développement Web (S1)</li>
-                <li><strong>Projet</strong>: SAE 1.04 - Se présenter sur Internet</li>
-                <li><strong>Date</strong>: Hiver 2025</li>
-                <li><strong>Lien du site</strong>: <a href="httpsAurala4.github.io/thomascharlet.github.io/" target="_blank">aurala4.github.io/thomascharlet.github.io/</a></li>
-                <li><strong>Dépôt Git</strong>: <a href="https://github.com/Aurala4/thomascharlet.github.io" target="_blank">GitHub</a></li>
+                <li><strong>Catégorie</strong>: Développement Web & Réseau (S1)</li>
+                <li><strong>Projet 1</strong>: SAE 1.04 - Se présenter sur Internet</li>
+                <li><strong>Projet 2</strong>: TP R1.07 - Commandes Linux & Git</li>
+                <li><strong>Projet 3</strong>: TP R1.08 - Adressage et sous-réseaux</li>
+                <li><strong>Lien du site</strong>: <a href="https://aurala4.github.io/thomascharlet.github.io/" target="_blank">Aurala4.github.io/thomascharlet.github.io/</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Description du projet (SAE 1.04)</h2>
+              <h2>Description des projets</h2>
               <p>
-                Ce projet académique consiste à créer un site web personnel (portfolio) en respectant un cahier des charges précis. L'objectif est de développer une page de présentation, un CV en HTML/CSS, et un portfolio présentant les 5 compétences du BUT R&T.
+                Cette page regroupe les 3 projets principaux réalisés au Semestre 1 du BUT R&T, chacun couvrant différentes compétences du programme national.
               </p>
 
               <div class="features mt-4">
-                <h3>Fonctionnalités Clés</h3>
+                <h3>Compétences mobilisées</h3>
                 <div class="row gy-3">
+                  
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-bootstrap" style="color: #007bff;"></i>
-                      <h4>Adaptation de Template Bootstrap</h4>
-                      <p>Utilisation du template SnapFolio et adaptation de sa structure (menu, sections, pied de page) pour correspondre aux besoins du projet.</p>
+                      <i class="bi bi-code-slash"></i>
+                      <h4>Programmer (SAE 1.04)</h4>
+                      <p>Utilisation de HTML/CSS et Bootstrap pour adapter un template et créer un site portfolio responsive.</p>
                     </div>
                   </div>
+                  
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-aspect-ratio" style="color: #007bff;"></i>
-                      <h4>Responsive Design</h4>
-                      <p>Le site est conçu pour s'adapter à 3 formats d'écrans (mobile, tablette, ordinateur) en utilisant les grilles Bootstrap.</p>
+                      <i class="bi bi-person-workspace"></i>
+                      <h4>Administrer (SAE 1.04 & TP R1.07)</h4>
+                      <p>Administration d'un dépôt Git, gestion des fichiers, et utilisation des commandes de base Linux (R1.07) pour gérer un système.</p>
                     </div>
                   </div>
+
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-github" style="color: #007bff;"></i>
-                      <h4>Hébergement GitHub Pages</h4>
-                      <p>Le site est déployé via Git sur GitHub Pages, en respectant la nomenclature et en utilisant des chemins relatifs.</p>
+                      <i class="bi bi-router"></i>
+                      <h4>Connecter (TP R1.08)</h4>
+                      <p>Calcul et mise en œuvre de plans d'adressage IP (IPv4) et configuration de sous-réseaux pour connecter des équipements.</p>
                     </div>
                   </div>
+
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-file-earmark-code" style="color: #007bff;"></i>
-                      <h4>CV en HTML/CSS</h4>
-                      <p>Le CV n'est pas un PDF, mais est entièrement codé en HTML et stylisé en CSS pour une meilleure intégration (Section `#resume`).</p>
+                      <i class="bi bi-shield-lock"></i>
+                      <h4>Sécuriser (TP R1.07)</h4>
+                      <p>Application des permissions de base (droits `chmod`) sur un système Linux pour restreindre l'accès aux fichiers.</p>
                     </div>
                   </div>
                 </div>
@@ -155,7 +181,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assetsG/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
