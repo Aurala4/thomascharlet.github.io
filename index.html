@@ -25,13 +25,15 @@
 
   <style>
     :root {
-      --color-primary: #f8f9fa; /* Off-white */
+      --color-primary: #f8f9fa; /* Blanc cassé */
       --color-accent: #f8f9fa;
     }
     .header .navmenu a.active, .header .navmenu a:hover,
     .header .social-links a:hover,
-    .hero-content .hero-text h1 .accent-text {
-      color: var(--color-primary);
+    .hero-content .hero-text h1 .accent-text,
+    .section-title h2,
+    .text-primary {
+      color: var(--color-primary) !important;
     }
     .btn-primary { 
       background: var(--color-primary); 
@@ -39,30 +41,17 @@
       border-color: var(--color-primary);
     }
     .btn-primary:hover {
-      background: #d4d4d4;
-      border-color: #d4d4d4;
-      color: #1a1a1a;
+      background: #d4d4d4; border-color: #d4d4d4; color: #1a1a1a;
     }
     .btn-outline {
-      border-color: #f8f9fa;
-      color: #f8f9fa;
+      border-color: var(--color-primary); color: var(--color-primary);
     }
     .btn-outline:hover {
-      background: #f8f9fa;
-      color: #1a1a1a;
+      background: var(--color-primary); color: #1a1a1a;
     }
-    .portfolio-card i { color: var(--color-primary); }
-    .btn-outline-light {
-      border-color: #f8f9fa;
-      color: #f8f9fa;
-    }
-    .btn-outline-light:hover {
-      background: #f8f9fa;
-      color: #1a1a1a;
-    }
-    .text-primary { color: var(--color-primary) !important; }
+    /* Style pour les cartes Portfolio (Thème sombre) */
     .portfolio-card {
-      background-color: #2c2c2c;
+      background-color: #2c2c2c; /* Fond de carte sombre */
       border: 1px solid #444;
       border-radius: 8px;
       padding: 20px;
@@ -72,6 +61,13 @@
     .portfolio-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .portfolio-card i { color: var(--color-primary); font-size: 2.5rem; }
+    .btn-outline-light {
+      border-color: var(--color-primary); color: var(--color-primary);
+    }
+    .btn-outline-light:hover {
+      background: var(--color-primary); color: #1a1a1a;
     }
   </style>
 </head>
@@ -291,7 +287,9 @@
         <h2>Portfolio : Compétences R&T</h2>
         <p>Mes projets et réalisations sont liés aux cinq domaines de compétences du BUT Réseaux & Télécommunications.</p>
         <p><a href="competences-rt.html" class="btn btn-sm btn-outline mt-2">Détails des 5 Compétences R&T</a></p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
@@ -336,7 +334,16 @@
               <i class="bi bi-graph-up"></i>
               <h4 class="mt-3">Surveiller</h4>
               <p>Audit et supervision des performances réseau et système.</p>
-              <a href="#" class="btn btn-sm btn-outline-light mt-2 disabled">Projet à venir</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary mt-2 disabled">Projet à venir</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="700">
+            <div class="portfolio-card text-center">
+              <i class="bi bi-git"></i>
+              <h4 class="mt-3">Administration (Git)</h4>
+              <p>Gestion de version et hébergement de ce site via Git et GitHub Pages.</p>
+              <a href="https://github.com/Aurala4/thomascharlet.github.io" target="_blank" class="btn btn-sm btn-outline-light mt-2">Voir le Dépôt</a>
             </div>
           </div>
 
@@ -377,11 +384,9 @@
             <div class="contact-form">
               <h3>Envoyer un message</h3>
               <p>Le moyen le plus simple de me joindre est par e-mail.</p>
-              
-              <div class="text-center">
-                <a href="mailto:1charlet.thomas@gmail.com" class="btn btn-primary">M'envoyer un e-mail</a>
+              <div class="text-center mt-4">
+                <a href="mailto:1charlet.thomas@gmail.com" class="btn btn-primary btn-lg">M'envoyer un e-mail</a>
               </div>
-
             </div>
           </div>
         </div>
