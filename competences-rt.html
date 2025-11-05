@@ -25,12 +25,13 @@
 
   <style>
     :root {
-      --color-primary: #f8f9fa; /* Off-white */
+      --color-primary: #f8f9fa; /* Blanc cassé */
       --color-accent: #f8f9fa;
     }
     .header .navmenu a.active, .header .navmenu a:hover,
-    .header .social-links a:hover {
-      color: var(--color-primary);
+    .header .social-links a:hover,
+    .text-primary {
+      color: var(--color-primary) !important;
     }
     .btn-primary { 
       background: var(--color-primary); 
@@ -38,18 +39,15 @@
       border-color: var(--color-primary);
     }
     .btn-primary:hover {
-      background: #d4d4d4;
-      border-color: #d4d4d4;
-      color: #1a1a1a;
+      background: #d4d4d4; border-color: #d4d4d4; color: #1a1a1a;
     }
-    .text-primary { color: var(--color-primary) !important; }
     .service-item {
-      border: 1px solid #444; /* Bordure grise foncée */
+      border: 1px solid #444;
       padding: 20px;
       border-radius: 8px;
       margin-bottom: 20px;
       transition: all 0.3s ease-in-out;
-      background-color: #2c2c2c; /* Fond de carte sombre */
+      background-color: #2c2c2c;
     }
     .service-item:hover {
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -61,12 +59,10 @@
       margin-right: 15px;
     }
     .btn-outline-primary {
-      border-color: var(--color-primary);
-      color: var(--color-primary);
+      border-color: var(--color-primary); color: var(--color-primary);
     }
     .btn-outline-primary:hover {
-      background: var(--color-primary);
-      color: #1a1a1a;
+      background: var(--color-primary); color: #1a1a1a;
     }
   </style>
 </head>
@@ -110,7 +106,7 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="content mt-1">
-              <h2>Les 5 Cœurs de Métiers du BUT R&T</h2>
+              <h2 class="text-primary">Les 5 Cœurs de Métiers du BUT R&T</h2>
               <p class="fst-italic">
                 Le programme national Réseaux & Télécommunications s'articule autour de cinq grandes compétences. Mon portfolio vise à présenter mes réalisations liées à ces domaines.
               </p>
