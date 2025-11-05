@@ -22,6 +22,28 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-primary: #f8f9fa; /* Off-white */
+      --color-accent: #f8f9fa;
+    }
+    .header .navmenu a.active, .header .navmenu a:hover,
+    .header .social-links a:hover {
+      color: var(--color-primary);
+    }
+    .btn-primary { 
+      background: var(--color-primary); 
+      color: #1a1a1a; 
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: #d4d4d4;
+      border-color: #d4d4d4;
+      color: #1a1a1a;
+    }
+    .text-primary { color: var(--color-primary) !important; }
+  </style>
 </head>
 
 <body class="starter-page-page">
@@ -41,9 +63,10 @@
 
       <div class="social-links text-center">
         <a href="https://github.com/Aurala4" target="_blank" title="Mon Profil GitHub"><i class="bi bi-github"></i></a>
-        <a href="#" target="_blank" title="Mon Profil LinkedIn (à compléter)"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/thomas-charlet-b821b2287/" target="_blank" title="Mon Profil LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
+
   </header>
 
   <main class="main">
@@ -58,39 +81,43 @@
           </ol>
         </nav>
       </div>
-    </div><section id="mentions-legales" class="starter-section section">
+    </div>
+    <section id="mentions-legales" class="starter-section section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Informations Légales & Responsabilités</h2>
+        <h2 class="text-primary">Informations Légales & Responsabilités</h2>
       </div>
 
       <div class="container" data-aos="fade-up">
         
         <h3>1. Informations sur l'Éditeur du Site</h3>
-        <p><strong>Nom et Prénom :</strong> Thomas Charlet</p>
-        <p><strong>Statut :</strong> Étudiant IUT de Béthune (BUT Réseaux & Télécommunications)</p>
-        <p><strong>Adresse de contact :</strong> 11 rue Louis Helle, 62000 Arras</p>
-        <p><strong>Contact :</strong> 1charlet.thomas@gmail.com / 06 71 37 60 05</p>
-        <p><strong>Directeur de la publication :</strong> Thomas Charlet (à titre personnel pour ce projet académique).</p>
+        <div class="card bg-dark text-white p-3 mb-4" style="background-color: #2c2c2c !important; border-color: #444;">
+            <p><strong>Nom et Prénom :</strong> Thomas Charlet</p>
+            <p><strong>Statut :</strong> Étudiant IUT de Béthune (BUT Réseaux & Télécommunications)</p>
+            <p><strong>Raison de la publication :</strong> Projet académique (SAE 1.04) à l'IUT de Béthune.</p>
+            <p><strong>Directeur de la publication :</strong> Thomas Charlet</p>
+        </div>
         
-        <h3 class="mt-4">2. Objectif du Site (Conformité SAE 1.04)</h3>
-        <p>Ce site a été réalisé dans le cadre de l'unité d'enseignement **SAE 1.04 – Se présenter sur Internet** du BUT Réseaux & Télécommunications de l'IUT de Béthune. Son objectif principal est de présenter le profil de l'étudiant, son CV et ses compétences acquises durant sa formation.</p>
+        <h3 class="mt-4">2. Hébergement du Site</h3>
+        <div class="card bg-dark text-white p-3 mb-4" style="background-color: #2c2c2c !important; border-color: #444;">
+            <p><strong>Hébergeur :</strong> GitHub Pages (GitHub, Inc.)</p>
+            <p><strong>Adresse de l'hébergeur :</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
+            <p><strong>URL du dépôt :</strong> <code>https://github.com/Aurala4/thomascharlet.github.io</code></p>
+        </div>
         
-        <h3 class="mt-4">3. Hébergement</h3>
-        <p>Ce site web est hébergé par **GitHub Pages**.</p>
-        <p><strong>Hébergeur :</strong> GitHub, Inc. - 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
-        <p><strong>URL du dépôt :</strong> <code>https://github.com/Aurala4/thomascharlet.github.io</code></p>
-        
-        <h3 class="mt-4">4. Crédits de Conception</h3>
-        <p>Conformément aux exigences de la SAE, voici les crédits du matériel utilisé :</p>
-        <ul>
-          <li><strong>Template de Base :</strong> <a href="https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/" target="_blank">SnapFolio</a>, conçu par **BootstrapMade**.</li>
-          <li><strong>Framework CSS :</strong> **Bootstrap** (via CDN).</li>
-          <li><strong>Typographie :</strong> Google Fonts (Roboto, Ubuntu, Nunito).</li>
-          <li>**Icônes :** Bootstrap Icons.</li>
-          <li>**Visuels :** Les images utilisées sont issues du template SnapFolio (à remplacer par des visuels personnels).</li>
-        </ul>
+        <h3 class="mt-4">3. Crédits de Conception</h3>
+        <div class="card bg-dark text-white p-3 mb-4" style="background-color: #2c2c2c !important; border-color: #444;">
+            <p><strong>Template de Base (Crédits) :</strong> Le design est basé sur le template gratuit **SnapFolio** de <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>.</p>
+            <p><strong>Framework CSS :</strong> **Bootstrap** (via CDN).</p>
+            <p><strong>Icônes :</strong> Bootstrap Icons.</p>
+        </div>
+
+        <p class="text-center mt-5">
+            <a href="index.html" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Retour à l'Accueil</a>
+        </p>
+
       </div>
-    </section></main>
+    </section>
+  </main>
 
   <footer id="footer" class="footer position-relative">
     <div class="container">
@@ -99,7 +126,7 @@
       </div>
       <div class="credits">
         Design basé sur <a href="https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/" target="_blank">SnapFolio</a> par BootstrapMade.
-        <p><a href="mentions-legales.html" class="text-secondary">Mentions Légales & Crédits</a></p>
+        <p><a href="mentions-legales.html" class="text-secondary" target="_blank">Mentions Légales & Crédits</a></p>
       </div>
     </div>
   </footer>
@@ -112,7 +139,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assetsServices/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
