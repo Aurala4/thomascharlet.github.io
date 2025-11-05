@@ -24,9 +24,46 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
+    :root {
+      --color-primary: #f8f9fa; /* Off-white */
+      --color-accent: #f8f9fa;
+    }
+    .header .navmenu a.active, .header .navmenu a:hover,
+    .header .social-links a:hover,
+    .hero-content .hero-text h1 .accent-text {
+      color: var(--color-primary);
+    }
+    .btn-primary { 
+      background: var(--color-primary); 
+      color: #1a1a1a; /* Texte noir sur bouton blanc */
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: #d4d4d4;
+      border-color: #d4d4d4;
+      color: #1a1a1a;
+    }
+    .btn-outline {
+      border-color: #f8f9fa;
+      color: #f8f9fa;
+    }
+    .btn-outline:hover {
+      background: #f8f9fa;
+      color: #1a1a1a;
+    }
+    .portfolio-card i { color: var(--color-primary); }
+    .btn-outline-light {
+      border-color: #f8f9fa;
+      color: #f8f9fa;
+    }
+    .btn-outline-light:hover {
+      background: #f8f9fa;
+      color: #1a1a1a;
+    }
+    .text-primary { color: var(--color-primary) !important; }
     .portfolio-card {
-      background-color: #2c2c2c; /* Couleur de fond sombre pour les cartes */
-      border: 1px solid #444; /* Bordure légère */
+      background-color: #2c2c2c;
+      border: 1px solid #444;
       border-radius: 8px;
       padding: 20px;
       height: 100%;
@@ -35,10 +72,6 @@
     .portfolio-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-    .portfolio-card i {
-      font-size: 2.5rem;
-      color: #007bff; /* Bleu primaire pour l'icône */
     }
   </style>
 </head>
@@ -58,7 +91,7 @@
       </nav>
       <div class="social-links text-center">
         <a href="https://github.com/Aurala4" class="github" title="Mon GitHub (Aurala4)" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="#" class="linkedin" title="Mon LinkedIn (Lien à mettre à jour)"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/thomas-charlet-b821b2287/" class="linkedin" title="Mon LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </header>
@@ -257,16 +290,17 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio : Compétences R&T</h2>
         <p>Mes projets et réalisations sont liés aux cinq domaines de compétences du BUT Réseaux & Télécommunications.</p>
-        <p><a href="competences-rt.html" class="btn btn-sm btn-outline-primary mt-2">Détails des 5 Compétences R&T</a></p>
+        <p><a href="competences-rt.html" class="btn btn-sm btn-outline mt-2">Détails des 5 Compétences R&T</a></p>
       </div><div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="portfolio-card text-center"> <i class="bi bi-person-workspace"></i>
+            <div class="portfolio-card text-center">
+              <i class="bi bi-person-workspace"></i>
               <h4 class="mt-3">Administrer</h4>
               <p>Gestion des systèmes (Linux/Windows) et des services (DHCP, DNS).</p>
-              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Voir Projet (SAE 1.04)</a>
+              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : SAE 1.04</a>
             </div>
           </div>
 
@@ -275,7 +309,7 @@
               <i class="bi bi-router"></i>
               <h4 class="mt-3">Connecter</h4>
               <p>Mise en place d'infrastructures réseau, adressage et routage (VLAN, IP).</p>
-              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Voir Projet (TP R1.08)</a>
+              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : TP R1.08</a>
             </div>
           </div>
 
@@ -284,7 +318,7 @@
               <i class="bi bi-code-slash"></i>
               <h4 class="mt-3">Programmer</h4>
               <p>Développement de solutions (HTML/CSS, Python, Bash) pour le réseau.</p>
-              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Voir Projet (SAE 1.04)</a>
+              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : SAE 1.04</a>
             </div>
           </div>
           
@@ -293,7 +327,7 @@
               <i class="bi bi-shield-lock"></i>
               <h4 class="mt-3">Sécuriser</h4>
               <p>Protection des systèmes, configuration de pare-feu et analyse de logs.</p>
-              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Voir Projet (TP R1.07)</a>
+              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : TP R1.07</a>
             </div>
           </div>
           
@@ -302,7 +336,7 @@
               <i class="bi bi-graph-up"></i>
               <h4 class="mt-3">Surveiller</h4>
               <p>Audit et supervision des performances réseau et système.</p>
-              <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Voir Projet (TP R2.03)</a>
+              <a href="#" class="btn btn-sm btn-outline-light mt-2 disabled">Projet à venir</a>
             </div>
           </div>
 
@@ -342,29 +376,12 @@
           <div class="col-lg-7">
             <div class="contact-form">
               <h3>Envoyer un message</h3>
-              <p>Veuillez noter que ce formulaire nécessite un backend PHP pour fonctionner (hors périmètre de la SAE 1.04).</p>
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Votre nom" required="">
-                  </div>
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Votre email" required="">
-                  </div>
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
-                  </div>
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-                  <div class="col-12 text-center">
-                    <div class="loading">Chargement</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Votre message a été envoyé. Merci !</div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                  </div>
-                </div>
-              </form>
+              <p>Le moyen le plus simple de me joindre est par e-mail.</p>
+              
+              <div class="text-center">
+                <a href="mailto:1charlet.thomas@gmail.com" class="btn btn-primary">M'envoyer un e-mail</a>
+              </div>
+
             </div>
           </div>
         </div>
