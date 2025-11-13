@@ -200,13 +200,20 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>CV Détaillé</h2>
         <p>Parcours académique, expériences professionnelles et engagements.</p>
+        
+        <div class="mt-3">
+            <a href="assets/cv.pdf" class="btn btn-sm btn-outline-light" download="CV_Thomas_Charlet.pdf" target="_blank">
+                <i class="bi bi-file-earmark-pdf"></i> Télécharger mon CV (PDF)
+            </a>
+        </div>
+
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
               
-              <h3>Compétences Techniques &amp; Transversales</h3>
+              <h3>Compétences Techniques & Transversales</h3>
               <ul class="list-unstyled">
                 <li><i class="bi bi-laptop"></i> <strong>Informatique :</strong> Pack Office, outils de communication, bases réseaux et programmation.</li>
                 <li><i class="bi bi-emoji-smile"></i> <strong>Animation :</strong> Encadrement, sécurité et pédagogie auprès d’enfants (BAFA, PSC1, SNU).</li>
@@ -255,15 +262,15 @@
                 <h5>2023</h5>
                 <p class="company"><i class="bi bi-heart"></i> Plateforme Santé du Douaisis</p>
                 <ul>
-                  <li>Réalisation de supports de communication (affiches, logos).</li>
-                  <li>Gestion administrative et site web/réseaux sociaux.</li>
+                  <li>Réalisation de 5+ supports de communication (affiches, logos).</li>
+                  <li>Gestion administrative et mise à jour du site web/réseaux sociaux.</li>
                 </ul>
               </div>
             </div>
             <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
               <h3><i class="bi bi-mortarboard me-2"></i>Formation</h3>
               <div class="resume-item">
-                <h4>BUT Réseaux &amp; Télécommunications (S1)</h4>
+                <h4>BUT Réseaux & Télécommunications (S1)</h4>
                 <h5>2025 – en cours</h5>
                 <p class="company"><i class="bi bi-bank"></i> IUT de Béthune</p>
               </div>
@@ -286,7 +293,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio : Compétences R&T</h2>
         <p>Mes projets et réalisations sont liés aux cinq domaines de compétences du BUT Réseaux & Télécommunications.</p>
-        <p><a href="competences-rt.html" class="btn btn-sm btn-outline mt-2" style="color: var(--color-primary); border-color: var(--color-primary);">Détails des 5 Compétences R&T</a></p>
+        <p><a href="competences-rt.html" class="btn btn-sm btn-outline mt-2">Détails des 5 Compétences R&T</a></p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -423,6 +430,18 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  
+  <script>
+    window.addEventListener('load', () => {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    });
+  </script>
+
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
