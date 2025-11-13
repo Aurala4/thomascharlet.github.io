@@ -49,9 +49,9 @@
     .btn-outline:hover {
       background: var(--color-primary); color: #1a1a1a;
     }
-    /* Style pour les cartes Portfolio (Thème sombre) */
+    /* Style pour les cartes Portfolio */
     .portfolio-card {
-      background-color: #2c2c2c; /* Fond de carte sombre */
+      background-color: #2c2c2c;
       border: 1px solid #444;
       border-radius: 8px;
       padding: 20px;
@@ -81,7 +81,7 @@
         <ul>
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Accueil</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
-          <li><a href="competences-rt.html"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
@@ -109,7 +109,7 @@
                 <p class="lead">Étudiant motivé et autonome. Disponible le week-end.</p>
                 <p class="description">Ponctuel, sérieux et adaptable. Passionné par l'informatique, la gestion de projets et l'animation d'activités.</p>
                 <div class="hero-actions">
-                  <a href="competences-rt.html" class="btn btn-primary">Voir mon Portfolio</a>
+                  <a href="#portfolio" class="btn btn-primary">Voir mon Portfolio</a>
                   <a href="#contact" class="btn btn-outline">Me contacter</a>
                 </div>
               </div>
@@ -125,7 +125,9 @@
           </div>
         </div>
       </div>
-    </section><section id="about" class="about section">
+    </section>
+
+    <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
@@ -145,7 +147,7 @@
                   <a href="tel:+33671376005" class="contact-item">
                     <i class="bi bi-telephone"></i> 06 71 37 60 05
                   </a>
-                  <a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle,+62000+Arras" target="_blank" rel="noopener noreferrer" class="contact-item" style="color: inherit;">
+                  <a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle+62000+Arras" target="_blank" rel="noopener noreferrer" class="contact-item" style="color: #ffffff !important;">
                     <i class="bi bi-geo-alt"></i> 11 rue Louis Helle, 62000 Arras
                   </a>
                 </div>
@@ -160,43 +162,29 @@
               </div>
               <div class="description">
                 <p>Motivé, sérieux et autonome. Disponible le week-end. Ponctuel et adaptable, je sais travailler en équipe comme en autonomie et je m'investis pleinement dans les missions qui me sont confiées.</p>
-                <p>Compétences principales : <strong>Informatique</strong> (Pack Office, bases réseaux, programmation), <strong>Animation</strong> (encadrement d'enfants), <strong>Gestion</strong> (organisation, planification).</p>
+                <p>Compétences principales : <strong>Informatique</strong>, <strong>Animation</strong>, <strong>Gestion</strong>.</p>
               </div>
               <div class="details-grid">
                 <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Spécialisation</span>
-                    <span class="detail-value">Réseaux & Télécommunications</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Niveau</span>
-                    <span class="detail-value">BUT S1</span>
-                  </div>
+                  <div class="detail-item"><span class="detail-label">Spécialisation</span><span class="detail-value">Réseaux & Télécoms</span></div>
+                  <div class="detail-item"><span class="detail-label">Niveau</span><span class="detail-value">BUT S1</span></div>
                 </div>
                 <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Formation</span>
-                    <span class="detail-value">IUT de Béthune</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Langues</span>
-                    <span class="detail-value">Français</span>
-                  </div>
+                  <div class="detail-item"><span class="detail-label">Formation</span><span class="detail-value">IUT de Béthune</span></div>
+                  <div class="detail-item"><span class="detail-label">Langues</span><span class="detail-value">Français</span></div>
                 </div>
               </div>
               <div class="cta-section">
-                <a href="#resume" class="btn btn-primary">
-                  <i class="bi bi-file-earmark-text"></i> Voir CV détaillé
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                  <i class="bi bi-chat-dots"></i> Me contacter
-                </a>
+                <a href="#resume" class="btn btn-primary"><i class="bi bi-file-earmark-text"></i> Voir CV détaillé</a>
+                <a href="#contact" class="btn btn-outline"><i class="bi bi-chat-dots"></i> Me contacter</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><section id="resume" class="resume section">
+    </section>
+
+    <section id="resume" class="resume section">
       <div class="container section-title" data-aos="fade-up">
         <h2>CV Détaillé</h2>
         <p>Parcours académique, expériences professionnelles et engagements.</p>
@@ -210,26 +198,23 @@
         <div class="row gy-4">
           <div class="col-lg-4">
             <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
-              
-              <h3>Compétences Techniques & Transversales</h3>
+              <h3>Compétences</h3>
               <ul class="list-unstyled">
                 <li class="mb-3"><i class="bi bi-laptop"></i> <strong>Informatique :</strong><br>Pack Office, outils de communication, bases réseaux et programmation.</li>
                 <li class="mb-3"><i class="bi bi-emoji-smile"></i> <strong>Animation :</strong><br>Encadrement, sécurité et pédagogie auprès d’enfants (BAFA, PSC1, SNU).</li>
                 <li class="mb-3"><i class="bi bi-kanban"></i> <strong>Gestion :</strong><br>Organisation, planification, suivi administratif et logistique.</li>
                 <li class="mb-3"><i class="bi bi-lightbulb"></i> <strong>Soft skills :</strong><br>Ponctualité, autonomie, esprit d’équipe, adaptabilité.</li>
               </ul>
-
               <h3 class="mt-4">Centres d'Intérêt</h3>
               <ul class="list-unstyled">
                 <li class="mb-3"><i class="bi bi-bicycle"></i> <strong>Sport :</strong><br>Course, boxe, entraînement poids du corps.</li>
                 <li class="mb-3"><i class="bi bi-controller"></i> <strong>Loisirs :</strong><br>Jeux vidéo, manhwa, activités avec les enfants.</li>
                 <li class="mb-3"><i class="bi bi-airplane"></i> <strong>Divers :</strong><br>Voyages.</li>
               </ul>
-              
-              <h3 class="mt-4">Informations Complémentaires</h3>
+              <h3 class="mt-4">Infos +</h3>
               <ul class="list-unstyled">
                 <li class="mb-2"><i class="bi bi-car-front"></i> <strong>Permis B</strong> – Véhiculé.</li>
-                <li class="mb-2"><i class="bi bi-award"></i> <strong>PSC1</strong> & <strong>SNU</strong> (Phase 2 validée).</li>
+                <li class="mb-2"><i class="bi bi-award"></i> <strong>PSC1</strong> & <strong>SNU</strong>.</li>
               </ul>
             </div>
           </div>
@@ -241,9 +226,9 @@
                 <h5>Depuis 2023</h5>
                 <p class="company"><i class="bi bi-geo-alt"></i> Arras</p>
                 <ul>
-                  <li>Encadrement de groupes de 10-15 enfants (3 à 12 ans).</li>
-                  <li>Création et animation d’activités ludiques, sportives et éducatives.</li>
-                  <li>Travail en équipe et gestion de groupe.</li>
+                  <li>Encadrement d’enfants (3-12 ans).</li>
+                  <li>Création d’activités ludiques et éducatives.</li>
+                  <li>Travail en équipe.</li>
                 </ul>
               </div>
               <div class="resume-item">
@@ -251,8 +236,8 @@
                 <h5>Depuis 2023</h5>
                 <p class="company"><i class="bi bi-cash"></i> Vente et gestion</p>
                 <ul>
-                  <li>Gestion des ventes, suivi clients et stocks.</li>
-                  <li>Organisation et autonomie dans la gestion quotidienne.</li>
+                  <li>Gestion des ventes et stocks.</li>
+                  <li>Autonomie et relationnel.</li>
                 </ul>
               </div>
               <div class="resume-item">
@@ -260,15 +245,15 @@
                 <h5>2023</h5>
                 <p class="company"><i class="bi bi-heart"></i> Plateforme Santé du Douaisis</p>
                 <ul>
-                  <li>Réalisation de 5+ supports de communication (affiches, logos).</li>
-                  <li>Gestion administrative et mise à jour du site web/réseaux sociaux.</li>
+                  <li>Communication (affiches, logos).</li>
+                  <li>Gestion administrative.</li>
                 </ul>
               </div>
             </div>
             <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
               <h3><i class="bi bi-mortarboard me-2"></i>Formation</h3>
               <div class="resume-item">
-                <h4>BUT Réseaux & Télécommunications (S1)</h4>
+                <h4>BUT Réseaux & Télécommunications</h4>
                 <h5>2025 – en cours</h5>
                 <p class="company"><i class="bi bi-bank"></i> IUT de Béthune</p>
               </div>
@@ -280,131 +265,113 @@
               <div class="resume-item">
                 <h4>BAFA complet</h4>
                 <h5>2024</h5>
-                <p>Formation d'encadrement d'enfants en centre de loisirs.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><section id="portfolio" class="portfolio section">
-      
+    </section>
+
+    <section id="portfolio" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio : Compétences R&T</h2>
-        <p>Mes projets et réalisations sont liés aux cinq domaines de compétences du BUT Réseaux & Télécommunications.</p>
-        <p><a href="competences-rt.html" class="btn btn-sm btn-outline mt-2" style="color: var(--color-primary); border-color: var(--color-primary);">Détails des 5 Compétences R&T</a></p>
+        <p>Mes projets liés aux 5 compétences du BUT R&T.</p>
+        <p><a href="competences-rt.html" class="btn btn-sm btn-outline mt-2" style="color: var(--color-primary); border-color: var(--color-primary);">Détails des 5 Compétences</a></p>
       </div>
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="portfolio-card text-center">
               <i class="bi bi-person-workspace"></i>
               <h4 class="mt-3">Administrer</h4>
-              <p>Gestion des systèmes (Linux/Windows) et des services (DHCP, DNS).</p>
+              <p>Gestion systèmes & services.</p>
               <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : SAE 1.04</a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="portfolio-card text-center">
               <i class="bi bi-router"></i>
               <h4 class="mt-3">Connecter</h4>
-              <p>Mise en place d'infrastructures réseau, adressage et routage (VLAN, IP).</p>
+              <p>Infrastructures réseau, adressage.</p>
               <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : TP R1.08</a>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="portfolio-card text-center">
               <i class="bi bi-code-slash"></i>
               <h4 class="mt-3">Programmer</h4>
-              <p>Développement de solutions (HTML/CSS, Python, Bash) pour le réseau.</p>
+              <p>Dev (HTML/CSS, Python, Bash).</p>
               <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : SAE 1.04</a>
             </div>
           </div>
-          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
             <div class="portfolio-card text-center">
               <i class="bi bi-shield-lock"></i>
               <h4 class="mt-3">Sécuriser</h4>
-              <p>Protection des systèmes, configuration de pare-feu et analyse de logs.</p>
+              <p>Protection systèmes, droits.</p>
               <a href="portfolio-details.html" class="btn btn-sm btn-outline-light mt-2">Projet : TP R1.07</a>
             </div>
           </div>
-          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
             <div class="portfolio-card text-center">
               <i class="bi bi-graph-up"></i>
               <h4 class="mt-3">Surveiller</h4>
-              <p>Audit et supervision des performances réseau et système.</p>
-              <a href="#" class="btn btn-sm btn-outline-secondary mt-2 disabled">Projet à venir</a>
+              <p>Supervision performances.</p>
+              <a href="#" class="btn btn-sm btn-outline-secondary mt-2 disabled">À venir</a>
             </div>
           </div>
-          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="700">
             <div class="portfolio-card text-center">
               <i class="bi bi-git"></i>
               <h4 class="mt-3">Administration (Git)</h4>
-              <p>Gestion de version et hébergement de ce site via Git et GitHub Pages.</p>
+              <p>Gestion de version.</p>
               <a href="https://github.com/Aurala4/thomascharlet.github.io" target="_blank" class="btn btn-sm btn-outline-light mt-2">Voir le Dépôt</a>
             </div>
           </div>
-
         </div>
       </div>
-    </section><section id="contact" class="contact section">
+    </section>
+
+    <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Pour toute demande professionnelle, n'hésitez pas à me contacter.</p>
+        <p>N'hésitez pas à me contacter.</p>
       </div>
       <div class="container">
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
             <div class="info-box">
               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
+                <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
                 <div class="content">
                   <h4>Adresse</h4>
-                  <p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle,+62000+Arras" target="_blank" rel="noopener noreferrer" style="color: #2c2c2c; text-decoration: none;">
-                      11 rue Louis Helle, 62000 Arras
-                    </a>
-                  </p>
+                  <p><a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle+62000+Arras" target="_blank" style="color: #ffffff; text-decoration: none;">11 rue Louis Helle, 62000 Arras</a></p>
                 </div>
               </div>
               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Téléphone</h4>
-                  <p>06 71 37 60 05</p>
-                </div>
+                <div class="icon-box"><i class="bi bi-telephone"></i></div>
+                <div class="content"><h4>Téléphone</h4><p>06 71 37 60 05</p></div>
               </div>
               <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Mail</h4>
-                  <p>1charlet.thomas@gmail.com</p>
-                </div>
+                <div class="icon-box"><i class="bi bi-envelope"></i></div>
+                <div class="content"><h4>Mail</h4><p>1charlet.thomas@gmail.com</p></div>
               </div>
             </div>
           </div>
           <div class="col-lg-7">
-            <div class="contact-form text-center">
+            <div class="contact-form text-center d-flex flex-column justify-content-center align-items-center h-100">
               <h3>Envoyer un message</h3>
-              <p class="mb-4">Le moyen le plus simple de me joindre est par e-mail.</p>
-              <a href="mailto:1charlet.thomas@gmail.com" class="btn btn-primary btn-lg">M'envoyer un e-mail</a>
+              <p class="mb-4">Le moyen le plus simple est l'e-mail.</p>
+              <div class="text-center">
+                <a href="mailto:1charlet.thomas@gmail.com" class="btn btn-primary btn-lg px-5 py-3">M'envoyer un e-mail</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section></main>
+    </section>
+
+  </main>
 
   <footer id="footer" class="footer position-relative">
     <div class="container">
