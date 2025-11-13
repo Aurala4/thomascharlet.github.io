@@ -5,23 +5,46 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Mentions Légales & Crédits - Thomas Charlet</title>
-  
+  <meta name="description" content="Mentions légales, crédits et informations sur l'éditeur du site Thomas Charlet (SAE 1.04 BUT R&T).">
+  <meta name="keywords" content="Mentions Légales, Crédits, BUT R&T, Thomas Charlet, SAE104">
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link href="assets/css/main.css" rel="stylesheet">
+  
   <style>
-    :root { --color-primary: #f8f9fa; }
-    body { background-color: #000; color: #ccc; }
-    .card { background-color: #1a1a1a; border: 1px solid #333; color: #fff; }
-    h2, h3 { color: #fff; }
+    :root {
+      --color-primary: #f8f9fa; /* Blanc cassé */
+      --color-accent: #f8f9fa;
+    }
+    .header .navmenu a.active, .header .navmenu a:hover,
+    .header .social-links a:hover,
+    .text-primary {
+      color: var(--color-primary) !important;
+    }
+    .btn-primary { 
+      background: var(--color-primary); 
+      color: #1a1a1a; 
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: #d4d4d4; border-color: #d4d4d4; color: #1a1a1a;
+    }
+    .card {
+        background-color: #2c2c2c !important; 
+        border-color: #444 !important;
+    }
   </style>
 </head>
 
@@ -29,6 +52,7 @@
 
   <header id="header" class="header dark-background d-flex flex-column justify-content-center">
     <i class="header-toggle d-xl-none bi bi-list"></i>
+
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -38,9 +62,10 @@
           <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
+
       <div class="social-links text-center">
-        <a href="https://github.com/Aurala4" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/thomas-charlet-b821b2287/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Aurala4" target="_blank" title="Mon Profil GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/thomas-charlet-b821b2287/" target="_blank" title="Mon Profil LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </header>
@@ -49,7 +74,7 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Mentions Légales</h1>
+        <h1 class="mb-2 mb-lg-0">Mentions Légales & Crédits</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
@@ -57,46 +82,48 @@
           </ol>
         </nav>
       </div>
-    </div>
+    </div><section id="mentions-legales" class="starter-section section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="text-primary">Informations Légales & Responsabilités</h2>
+      </div>
 
-    <section id="starter-section" class="starter-section section">
       <div class="container" data-aos="fade-up">
         
-        <h3 class="mt-4">1. Éditeur du Site</h3>
-        <div class="card p-4 mb-4">
-            <p><strong>Nom :</strong> Thomas Charlet</p>
-            <p><strong>Statut :</strong> Étudiant en BUT Réseaux & Télécommunications</p>
-            <p><strong>Établissement :</strong> IUT de Béthune</p>
-            <p><strong>Contact :</strong> 1charlet.thomas@gmail.com</p>
+        <h3>1. Informations sur l'Éditeur du Site</h3>
+        <div class="card text-white p-3 mb-4">
+            <p><strong>Nom et Prénom :</strong> Thomas Charlet</p>
+            <p><strong>Statut :</strong> Étudiant IUT de Béthune (BUT Réseaux & Télécommunications)</p>
+            <p><strong>Raison de la publication :</strong> Projet académique (SAE 1.04) à l'IUT de Béthune.</p>
             <p><strong>Directeur de la publication :</strong> Thomas Charlet</p>
         </div>
-
-        <h3 class="mt-4">2. Hébergement</h3>
-        <div class="card p-4 mb-4">
-            <p>Ce site est hébergé par <strong>GitHub Pages</strong>.</p>
-            <p>GitHub, Inc.<br>88 Colin P Kelly Jr St<br>San Francisco, CA 94107<br>United States</p>
+        
+        <h3 class="mt-4">2. Hébergement du Site</h3>
+        <div class="card text-white p-3 mb-4">
+            <p><strong>Hébergeur :</strong> GitHub Pages (GitHub, Inc.)</p>
+            <p><strong>Adresse de l'hébergeur :</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
+            <p><strong>URL du dépôt :</strong> <code>https://github.com/Aurala4/thomascharlet.github.io</code></p>
+        </div>
+        
+        <h3 class="mt-4">3. Crédits de Conception</h3>
+        <div class="card text-white p-3 mb-4">
+            <p><strong>Template de Base (Crédits) :</strong> Le design est basé sur le template gratuit **SnapFolio** de <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>.</p>
+            <p><strong>Framework CSS :</strong> **Bootstrap** (via CDN).</p>
+            <p><strong>Icônes :</strong> Bootstrap Icons.</p>
+            <p class="mt-3"><strong>Visuels :</strong> Les photos de profil (`hero-profil.jpg`, `cv-profil.jpg`) et la capture de projet (`sae104-capture.jpg`) sont la propriété de Thomas Charlet. Les logos (favicon) ont été générés par IA et sont libres d'usage dans ce cadre.</p>
         </div>
 
-        <h3 class="mt-4">3. Crédits & Propriété Intellectuelle</h3>
-        <div class="card p-4 mb-4">
-            <p><strong>Template :</strong> Site basé sur le template gratuit <a href="https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/" target="_blank" class="text-white">SnapFolio</a> de BootstrapMade.</p>
-            <p><strong>Images :</strong> 
-                <ul>
-                    <li>Photos de profil : Propriété de Thomas Charlet.</li>
-                    <li>Logos/Icônes : Générés par IA / Bootstrap Icons.</li>
-                </ul>
-            </p>
-            <p><strong>Objectif :</strong> Ce site a été réalisé dans un but pédagogique pour la SAE 1.04.</p>
+        <h3 class="mt-4">4. Respect de la Charte Informatique</h3>
+        <div class="card text-white p-3 mb-4">
+            <p>Ce site respecte la charte informatique de l'Université d'Artois et de l'IUT de Béthune.</p>
+            <p><a href="http://www.iut-bethune.univ-artois.fr/" target="_blank" class="text-primary">Site officiel de l'IUT de Béthune</a></p>
         </div>
 
-        <div class="text-center mt-5">
-            <a href="index.html" class="btn btn-outline-light">Retour à l'accueil</a>
-        </div>
+        <p class="text-center mt-5">
+            <a href="index.html" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Retour à l'Accueil</a>
+        </p>
 
       </div>
-    </section>
-
-  </main>
+    </section></main>
 
   <footer id="footer" class="footer position-relative">
     <div class="container">
@@ -104,12 +131,26 @@
         <p>© <span>Thomas Charlet</span> <strong class="px-1 sitename">SAE 1.04</strong> <span>Tous droits réservés</span></p>
       </div>
       <div class="credits">
-        Design par BootstrapMade.
+        Design basé sur le template <a href="https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/" target="_blank">SnapFolio</a> par BootstrapMade.
+        <p><a href="mentions-legales.html" class="text-secondary" target="_blank">Mentions Légales & Crédits</a></p>
       </div>
     </div>
   </footer>
 
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
   <script src="assets/js/main.js"></script>
 
 </body>
