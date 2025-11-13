@@ -49,9 +49,9 @@
     .btn-outline:hover {
       background: var(--color-primary); color: #1a1a1a;
     }
-    /* Style pour les cartes Portfolio */
+    /* Style pour les cartes Portfolio (Thème sombre) */
     .portfolio-card {
-      background-color: #2c2c2c;
+      background-color: #2c2c2c; /* Fond de carte sombre */
       border: 1px solid #444;
       border-radius: 8px;
       padding: 20px;
@@ -81,7 +81,7 @@
         <ul>
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Accueil</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="competences-rt.html"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
@@ -105,11 +105,11 @@
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
               <div class="hero-text">
                 <h1>Thomas<span class="accent-text"> Charlet</span></h1>
-                <h2>Étudiant en Réseaux &amp; Télécommunications</h2>
+                <h2>Étudiant en Réseaux & Télécommunications</h2>
                 <p class="lead">Étudiant motivé et autonome. Disponible le week-end.</p>
                 <p class="description">Ponctuel, sérieux et adaptable. Passionné par l'informatique, la gestion de projets et l'animation d'activités.</p>
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">Voir mon Portfolio</a>
+                  <a href="competences-rt.html" class="btn btn-primary">Voir mon Portfolio</a>
                   <a href="#contact" class="btn btn-outline">Me contacter</a>
                 </div>
               </div>
@@ -125,9 +125,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="about section">
+    </section><section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
@@ -147,7 +145,7 @@
                   <a href="tel:+33671376005" class="contact-item">
                     <i class="bi bi-telephone"></i> 06 71 37 60 05
                   </a>
-                  <a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle+62000+Arras" target="_blank" rel="noopener noreferrer" class="contact-item" style="color: #ffffff !important;">
+                  <a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle,+62000+Arras" target="_blank" rel="noopener noreferrer" class="contact-item" style="color: #ffffff !important;">
                     <i class="bi bi-geo-alt"></i> 11 rue Louis Helle, 62000 Arras
                   </a>
                 </div>
@@ -345,7 +343,11 @@
                 <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
                 <div class="content">
                   <h4>Adresse</h4>
-                  <p><a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle+62000+Arras" target="_blank" style="color: #ffffff; text-decoration: none;">11 rue Louis Helle, 62000 Arras</a></p>
+                  <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=11+rue+Louis+Helle,+62000+Arras" target="_blank" rel="noopener noreferrer" style="color: #2c2c2c; text-decoration: none;">
+                      11 rue Louis Helle, 62000 Arras
+                    </a>
+                  </p>
                 </div>
               </div>
               <div class="info-item">
@@ -369,9 +371,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-  </main>
+    </section></main>
 
   <footer id="footer" class="footer position-relative">
     <div class="container">
@@ -379,8 +379,7 @@
         <p>© <span>Thomas Charlet</span> <strong class="px-1 sitename">SAE 1.04</strong> <span>Tous droits réservés</span></p>
       </div>
       <div class="credits">
-        Design basé sur le template <a href="https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/" target="_blank">SnapFolio</a> par BootstrapMade.
-        <p><a href="mentions-legales.html" class="text-secondary" target="_blank">Mentions Légales & Crédits</a></p>
+        Design par BootstrapMade. <a href="mentions-legales.html" class="text-secondary">Mentions Légales</a>
       </div>
     </div>
   </footer>
